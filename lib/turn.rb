@@ -52,8 +52,8 @@ end
 # => board -  the current board state
 def turn(board)
   # logical loop
-  move_accepted = False
-  until move_accepted == True
+  move_accepted = FALSE
+  until move_accepted == TRUE
     # prompt user for input and convert it
     puts "Please enter 1-9:"
     input = gets.strip()
