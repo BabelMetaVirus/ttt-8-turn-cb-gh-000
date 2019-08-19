@@ -56,9 +56,9 @@ end
    loop
 
      # prompt the user and get input
-     puts "Please enter 1-9:"             
+     puts "Please enter 1-9:"
      input = gets.strip()
-     
+
      # format input
      index = input_to_index(input)
 
@@ -74,5 +74,5 @@ end
      end
   end
 end
-       
+
        
