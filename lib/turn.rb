@@ -51,7 +51,12 @@ end
 # turn: execute a turn of tic-tac-toe
 # => board -  the current board state
 def turn(board)
-  # prompt user for input and convert it
-  puts "Please enter 1-9:"
-  input = gets.strip()
+  # logical loop
+  loop do
+    # prompt user for input and convert it
+    puts "Please enter 1-9:"
+    input = gets.strip()
+    index = input_to_index
+    break
+  end
 end
