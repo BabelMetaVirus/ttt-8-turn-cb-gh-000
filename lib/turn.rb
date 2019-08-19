@@ -40,5 +40,13 @@ def valid_move?(board, index)
   return in_range && !position_taken?(board, index)
 end
 
+# move: marks a board position at a given index with a provided token
+# => board - current board state
+# => index - index to mark
+# => value - token for the marks
+def move(board, index, value = "X")
+  board[index] = value
+end
+
 # turn: execute a turn of tic-tac-toe
 # => board -  the current board state
