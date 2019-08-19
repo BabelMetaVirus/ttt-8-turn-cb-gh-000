@@ -13,4 +13,10 @@ def display_board(board)
   puts(separator)
   puts(" #{board[6]} | #{board[7]} | #{board[8]} ")
 end
+# input_to_index: converts a user entry to an array index for move processing
+# => input - the user input
+# <= the board index requested as an integer
+def input_to_index(input)
+  return input.to_i - 1
+end
 # turn: execute a turn of tic-tac-toe
