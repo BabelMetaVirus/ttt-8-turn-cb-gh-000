@@ -57,7 +57,7 @@ def turn(board)
     # prompt user for input and convert it
     puts "Please enter 1-9:"
     input = gets.strip()
-    index = input_to_index
+    index = input_to_index(input)
     break
   end
 end
