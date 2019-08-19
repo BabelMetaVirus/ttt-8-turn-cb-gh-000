@@ -50,3 +50,29 @@ end
 
 # turn: execute a turn of tic-tac-toe
 # => board -  the current board state
+ def turn(board)
+
+   # logic loop
+   loop
+
+     # prompt the user and get input
+     puts "Please enter 1-9:"             
+     input = gets.strip()
+     
+     # format input
+     index = input_to_index(input)
+
+     # validate and process input
+     # success: mark the move, show the board, and exit the loop
+     # fail: loop and request input again
+     if valid_move?(board, index)
+       move(board,index)
+       display_board(board)
+       break
+     else
+       continue
+     end
+  end
+end
+       
+       
