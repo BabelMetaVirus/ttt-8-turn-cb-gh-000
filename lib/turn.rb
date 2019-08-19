@@ -62,5 +62,6 @@ def turn(board)
       move(board, index)
       display_board(board)
       move_accepted = TRUE
+    end
   end
 end
